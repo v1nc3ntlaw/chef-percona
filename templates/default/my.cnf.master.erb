@@ -390,6 +390,7 @@ innodb_file_per_table
 # This applies only for tables that have their own tablespace,
 # so for it to have an effect innodb_file_per_table must be enabled.
 innodb_file_format = <%= node["percona"]["server"]["innodb_file_format"] %>
+innodb_file_format_max = <%= node["percona"]["server"]["innodb_file_format"] %>
 
 # Set this option if you would like the InnoDB tablespace files to be
 # stored in another location. By default this is the MySQL datadir.
