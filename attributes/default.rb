@@ -105,6 +105,7 @@ default["percona"]["server"]["binlog_cache_size"]               = "1M"
 default["percona"]["server"]["binlog_format"]                   = "MIXED"
 default["percona"]["server"]["log_bin"]                         = "master-bin"
 default["percona"]["server"]["relay_log"]                       = "slave-relay-bin"
+default["percona"]["server"]["relay_log_space_limit"]           = "256M"
 default["percona"]["server"]["log_slave_updates"]               = false
 default["percona"]["server"]["log_warnings"]                    = true
 default["percona"]["server"]["log_long_format"]                 = false

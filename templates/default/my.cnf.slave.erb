@@ -295,6 +295,7 @@ log-bin = <%= node["percona"]["server"]["log_bin"] %>
 
 <% if !node["percona"]["server"]["relay_log"].empty? %>
 relay-log = <%= node["percona"]["server"]["relay_log"] %>
+relay-log-space-limit = <%= node["percona"]["server"]["relay_log_space_limit"] %>
 <% end %>
 
 
