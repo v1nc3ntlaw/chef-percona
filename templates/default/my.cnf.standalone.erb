@@ -53,6 +53,9 @@ skip-name-resolve
 <% if node["percona"]["server"]["skip_external_locking"] %>
 skip-external-locking
 <% end %>
+<% if node["percona"]["server"]["skip_name_resolve"] %>
+skip-name-resolve
+<% end %>
 
 net_read_timeout = <%= node["percona"]["server"]["net_read_timeout"] %>
 

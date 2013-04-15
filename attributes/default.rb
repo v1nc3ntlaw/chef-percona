@@ -61,6 +61,7 @@ default["percona"]["server"]["character_set"]                   = "utf8"
 default["percona"]["server"]["collation"]                       = "utf8_unicode_ci"
 default["percona"]["server"]["skip_name_resolve"]               = false
 default["percona"]["server"]["skip_external_locking"]           = true
+default["percona"]["server"]["skip_name_resolve"]               = true
 default["percona"]["server"]["net_read_timeout"]                = 120
 default["percona"]["server"]["old_passwords"]                   = 0
 default["percona"]["server"]["bind_address"]                    = "127.0.0.1"
