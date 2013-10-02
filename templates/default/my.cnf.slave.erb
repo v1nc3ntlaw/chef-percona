@@ -58,6 +58,14 @@ collation_server  = <%= node["percona"]["server"]["collation"] %>
 skip-name-resolve
 <% end %>
 
+######### character sets
+init_connect='SET collation_connection = utf8_unicode_ci'
+init_connect='SET NAMES utf8'
+character-set-server  = utf8
+character-set-client  = utf8
+collation-server      = utf8_unicode_ci
+skip-character-set-client-handshake
+
 <% if node["percona"]["server"]["skip_external_locking"] %>
 skip-external-locking
 <% end %>
